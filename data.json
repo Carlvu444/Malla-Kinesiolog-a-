@@ -128,7 +128,7 @@
 {
   "codigo": "KKIN304-1",
     "nombre": "Movimiento y funcionalidad",
-    "semestre": 3
+    "semestre": 3,
     "creditos": 4,
     "prerrequisitos": ["KKIN104-1"] 
 },
@@ -271,7 +271,7 @@
     "semestre": 6,
     "creditos": 4,
     "prerrequisitos": ["KKIN506-1"] 
-}
+},
 {
   "codigo": "KKIN607-1",
     "nombre": "Actividad Física y rendimiento deportivo",
@@ -362,5 +362,5 @@
     "semestre": 10,
     "creditos": 30,
     "prerrequisitos": ["KKIN901-1"]
-},
+}
   ]
