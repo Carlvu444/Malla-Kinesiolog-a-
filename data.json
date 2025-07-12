@@ -69,6 +69,13 @@
     "creditos": 3,
     "prerrequisitos": ["KKIN107-1"] 
 },
+  {
+  "codigo": "KKIN205-1",
+    "nombre": "Anatomía II ",
+    "semestre": 2,
+    "creditos": 6,
+    "prerrequisitos": [KKIN105-1] 
+  },
 {
   "codigo": "KKIN206-1",
     "nombre": "Corporalidad y comunicación II ",
@@ -175,7 +182,7 @@
     "prerrequisitos": ["KKIN305-1" , "KKIN303-1"] 
 },
 {
-  "codigo": "  LDSE102-5",
+  "codigo": "LDSE102-5",
     "nombre": "Lengua de señas de Chile II ",
     "semestre": 4,
     "creditos": 4,
@@ -207,7 +214,7 @@
     "nombre": "Acción Profesional Integrada I",
     "semestre": 5,
     "creditos": 5,
-    "prerrequisitos": ["KKIN406-1 , KKIN401-1"] 
+    "prerrequisitos": ["KKIN406-1" ,"KKIN401-1"] 
 },
 {
   "codigo": "KKIN505-1",
