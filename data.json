@@ -19,346 +19,348 @@
     "semestre": 1,
     "creditos": 3,
     "prerrequisitos": [] 
-  }
+  },
   { 
   "codigo": "KKIN101-1",
     "nombre": "Taller de integración",
     "semestre": 1,
     "creditos": 4,
     "prerrequisitos": [] 
+  },
   {
   "codigo": "KKIN103-1",
     "nombre": "Pensamiento lógico y Matemático",
     "semestre": 1,
     "creditos": 4,
     "prerrequisitos": [] 
-  }
+  },
   {
   "codigo": "KKIN102-1",
     "nombre": "Epistemología e investigación",
     "semestre": 1,
     "creditos": 3,
     "prerrequisitos": [] 
-  }
+  },
   {
   "codigo": "KKIN107-1",
     "nombre": "Inglés técnico I",
     "semestre": 1,
     "creditos": 3,
     "prerrequisitos": [] 
-  }
+  },
   {
   "codigo": "KKIN202-1",
     "nombre": "Unidad de investigación I ",
     "semestre": 2,
     "creditos": 4,
-    "prerrequisitos": [KKIN102-1] 
-  }
+    "prerrequisitos": ["KKIN102-1"] 
+  },
   {
   "codigo": "KKIN201-1",
     "nombre": "Práctica Indagativa ",
     "semestre": 2,
     "creditos": 4,
-    "prerrequisitos": [KKIN101-1]
-}
+    "prerrequisitos": ["KKIN101-1"]
+},
 {
   "codigo": "KKIN207-1",
     "nombre": "Ingles Técnico II",
     "semestre": 2,
     "creditos": 3,
-    "prerrequisitos": [KKIN107-1] 
-}
+    "prerrequisitos": ["KKIN107-1"] 
+},
 {
   "codigo": "KKIN206-1",
     "nombre": "Corporalidad y comunicación II ",
     "semestre": 2,
     "creditos": 3,
-    "prerrequisitos": [KKIN106-1] 
-}
+    "prerrequisitos": ["KKIN106-1"] 
+},
 {
   "codigo": "KKIN204-1",
     "nombre": "biokinesiología II ",
     "semestre": 2,
     "creditos": 7,
-    "prerrequisitos": [KKIN104-1] 
-}
+    "prerrequisitos": ["KKIN104-1"] 
+},
 {
   "codigo": "KKIN203-1",
     "nombre": "Actividad física, salud y educación",
     "semestre": 2,
     "creditos": 4,
     "prerrequisitos": [] 
-}
+},
 {
 "codigo": "KKIN302-1",
     "nombre": "Unidad de Investigación II ",
     "semestre": 3,
     "creditos": 4,
-    "prerrequisitos": [KKIN202-1] 
-}
+    "prerrequisitos": ["KKIN202-1"] 
+},
 {
   "codigo": "LDSE101-10",
     "nombre": "Lengua de Señas de Chile I",
     "semestre": 3,
     "creditos": 4,
     "prerrequisitos": [] 
-}
-"codigo": "KKIN301-1",
+},
+{
+  "codigo": "KKIN301-1",
     "nombre": "Práctica diagnostica y toma de decisiones",
     "semestre": 3,
     "creditos": 5,
-    "prerrequisitos": [KKIN101-1] 
-}
+    "prerrequisitos": ["KKIN101-1"] 
+},
 {
   "codigo": "KKIN303-1",
     "nombre": "Cognición y desarrollo humano",
     "semestre": 3,
     "creditos": 4,
     "prerrequisitos": []
-}
+},
 {
   "codigo": "KKIN306-1",
     "nombre": "Atención primaria de salud y actividad física",
     "semestre": 3,
     "creditos": 4,
     "prerrequisitos": [] 
-}
+},
 {
   "codigo": "KKIN304-1",
     "nombre": "Movimiento y funcionalidad",
     "semestre": 3
     "creditos": 4,
-    "prerrequisitos": [KKIN104-1] 
-}
+    "prerrequisitos": ["KKIN104-1"] 
+},
 {
   "codigo": "KKIN305-1",
     "nombre": "Neuromecánica del movimiento",
     "semestre": 3,
     "creditos": 5,
     "prerrequisitos": [] 
-}
+},
 {
   "codigo": "KKIN402-1",
     "nombre": "Métodos de investigación en movimiento humano",
     "semestre": 4,
     "creditos": 4,
-    "prerrequisitos": [KKIN202-1] 
-}
+    "prerrequisitos": ["KKIN202-1"] 
+},
 {
   "codigo": "KKIN403-1",
     "nombre": "Intervención en actividad física y salud",
     "semestre": 4,
     "creditos": 4,
-    "prerrequisitos": [KKIN303-1]
-}
+    "prerrequisitos": ["KKIN303-1"]
+},
 {
   "codigo": "KKIN406-1",
     "nombre": "Diseño de acciones profesionales",
     "semestre": 4,
     "creditos": 4,
     "prerrequisitos": [] 
-}
+},
 {
   "codigo": "KKIN404-1",
     "nombre": "Movimiento y funcionalidad limitada",
     "semestre": 4,
     "creditos": 5,
-    "prerrequisitos": [KKIN304-1] 
-}
+    "prerrequisitos": ["KKIN304-1"] 
+},
 {
   "codigo": "KKIN405-1",
     "nombre": "Comportamiento y aprendizaje motor",
     "semestre": 4,
     "creditos": 4,
-    "prerrequisitos": [KKIN305-1 , KKIN303-1] 
-}
+    "prerrequisitos": ["KKIN305-1" , "KKIN303-1"] 
+},
 {
   "codigo": "  LDSE102-5",
     "nombre": "Lengua de señas de Chile II ",
     "semestre": 4,
     "creditos": 4,
-    "prerrequisitos": [LDSE101-10] 
-}
+    "prerrequisitos": ["LDSE101-10"] 
+},
 {
   "codigo": "KKIN401-1",
     "nombre": "Páctica Diseño Intervención ",
     "semestre": 4,
     "creditos": 5,
-    "prerrequisitos": [KKIN301-1] 
-}
-
+    "prerrequisitos": ["KKIN301-1"] 
+},
 {
   "codigo": "KKIN501-1",
     "nombre": "Práctica Intervención I ",
     "semestre": 5,
     "creditos": 5,
-    "prerrequisitos": [KKIN401-1] 
-}
+    "prerrequisitos": ["KKIN401-1"] 
+},
 {
   "codigo": "KKIN502-1",
     "nombre": "Proyecto de investigación",
     "semestre": 5,
     "creditos": 4,
-    "prerrequisitos": [KKIN402-1] 
-}
+    "prerrequisitos": ["KKIN402-1"] 
+},
 {
  "codigo": "KKIN504-1",
     "nombre": "Acción Profesional Integrada I",
     "semestre": 5,
     "creditos": 5,
-    "prerrequisitos": [KKIN406-1 , KKIN401-1] 
-}
+    "prerrequisitos": ["KKIN406-1 , KKIN401-1"] 
+},
 {
   "codigo": "KKIN505-1",
     "nombre": "Género, salud e interculturalidad",
     "semestre": 5,
     "creditos": 4,
     "prerrequisitos": [] 
-}
+},
 {
   "codigo": "KKIN506-1",
     "nombre": "Kinesiología y educación",
     "semestre": 5,
     "creditos": 4,
     "prerrequisitos": [] 
-}
+},
 {
   "codigo": "LSDE103-9",
     "nombre": "Lengua de señas de Chile III",
     "semestre": 5,
     "creditos": 4,
-    "prerrequisitos": [LSDE102-5]
-}
+    "prerrequisitos": ["LSDE102-5"]
+},
 {
   "codigo": "KKIN601-1",
     "nombre": "Práctica interdisciplinaria",
     "semestre": 6,
     "creditos": 5,
-    "prerrequisitos": [KKIN501-1] 
-}
+    "prerrequisitos": ["KKIN501-1"] 
+},
 {
   "codigo": "KKIN602-1",
     "nombre": "Proceso de investigación",
     "semestre": 6,
     "creditos": 4,
-    "prerrequisitos": [KKIN502-1] 
-}
+    "prerrequisitos": ["KKIN502-1"] 
+},
 {
   "codigo": "KKIN603-1",
     "nombre": "Gestión en proyectos ",
     "semestre": 6,
     "creditos": 4,
-    "prerrequisitos": [KKIN503-1] 
-}
+    "prerrequisitos": ["KKIN503-1"] 
+},
 {
   "codigo": "KKIN604-1",
     "nombre": "Acción Profesional integrada II",
     "semestre": 6,
     "creditos": 5,
-    "prerrequisitos": [KKIN504-1 , KKIN501-1] 
-}
+    "prerrequisitos": ["KKIN504-1" , "KKIN501-1"] 
+},
 {
  "codigo": "KKIN605-1",
     "nombre": "Kinesiología y envejecimiento",
     "semestre": 6,
     "creditos": 4,
-    "prerrequisitos": [KKIN505-1]  
-}
+    "prerrequisitos": ["KKIN505-1"]  
+},
 {
   "codigo": "KKIN606-1",
     "nombre": "Intervención en Contextos Educativos ",
     "semestre": 6,
     "creditos": 4,
-    "prerrequisitos": [KKIN506-1] 
-  {
+    "prerrequisitos": ["KKIN506-1"] 
+}
+{
   "codigo": "KKIN607-1",
     "nombre": "Actividad Física y rendimiento deportivo",
     "semestre": 6,
     "creditos": 4,
-    "prerrequisitos": [KKIN404-1] 
-}
+    "prerrequisitos": ["KKIN404-1"] 
+},
 {
   "codigo": "KKIN701-1",
     "nombre": "Práctica interdisciplinaria II",
     "semestre": 7,
     "creditos": 5,
-    "prerrequisitos": [KKIN601-1] 
-}
+    "prerrequisitos": ["KKIN601-1"] 
+},
 {
   "codigo": "KKIN702-1",
     "nombre": "Proceso de Investigación II",
     "semestre": 7,
     "creditos": 6,
-    "prerrequisitos": [KKIN602-1] 
-}
+    "prerrequisitos": ["KKIN602-1"] 
+},
 {
   "codigo": "KKIN705-1",
     "nombre": "Innovación Disciplinar",
     "semestre": 7,
     "creditos": 5,
-    "prerrequisitos": [KKIN502-1]
-}
+    "prerrequisitos": ["KKIN502-1"]
+},
 {
   "codigo": "KKIN703-1",
     "nombre": "Acción Profesional integrada III",
     "semestre": 7,
     "creditos": 5,
-    "prerrequisitos": [KKIN604-1 , KKIN601-1]
-}
+    "prerrequisitos": ["KKIN604-1" ," KKIN601-1"]
+},
 {
   "codigo": "KKIN704-1",
     "nombre": "Intervención Funcional en Personas Mayores",
     "semestre": 7,
     "creditos": 4,
-    "prerrequisitos": [KKIN605-1]
-}
+    "prerrequisitos": ["KKIN605-1"]
+},
 {
   "codigo": "KKIN706-1",
     "nombre": "Deportes e Inclusión",
     "semestre": 7,
     "creditos": 4,
-    "prerrequisitos": [KKIN607-1]
-}
+    "prerrequisitos": ["KKIN607-1"]
+}, 
 {
    "codigo": "KKIN801-1",
     "nombre": "Práctica Intervención II",
     "semestre": 8,
     "creditos": 13,
-    "prerrequisitos": [KKIN701-1]
-}
+    "prerrequisitos": ["KKIN701-1"]
+},
 {
    "codigo": "KKIN802-1",
     "nombre": "Tesis",
     "semestre": 8,
     "creditos": 10,
-    "prerrequisitos": [KKIN702-1]
-}
+    "prerrequisitos": ["KKIN702-1"]
+},
 {
    "codigo": "KKIN803-1",
     "nombre": "Electivo Profesional",
     "semestre": 8,
     "creditos": 4,
-    "prerrequisitos": [KKIN703-1]
-}
+    "prerrequisitos": ["KKIN703-1"]
+},
 {
    "codigo": "KKIN804-1",
     "nombre": "Electivo Transversal",
     "semestre": 8,
     "creditos": 4,
     "prerrequisitos": []
-}
+},
 {
    "codigo": "KKIN901-1",
     "nombre": "Práctica Profesional I",
     "semestre": 9,
     "creditos": 30,
-    "prerrequisitos": [KKIN802-1]
-}
+    "prerrequisitos": ["KKIN802-1"]
+},
 {
 "codigo": "KKINX01-1",
     "nombre": "Práctica Profesional II",
     "semestre": 10,
     "creditos": 30,
-    "prerrequisitos": [KKIN901-1]
+    "prerrequisitos": ["KKIN901-1"]
 }
   ]
