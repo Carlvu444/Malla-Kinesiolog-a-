@@ -1,3 +1,13 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
 #malla-container {
   display: flex;
   flex-direction: row;
@@ -5,15 +15,21 @@
   overflow-x: auto;
   gap: 20px;
   padding: 10px;
+  border: 2px dashed #ccc;
 }
 
 .semestre {
-  min-width: 200px;
+  min-width: 220px;
   background-color: #f0f0f0;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   flex-shrink: 0;
+}
+
+.semestre h2 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .ramo {
@@ -35,8 +51,4 @@
   background-color: #eee;
   color: #aaa;
   cursor: not-allowed;
-}
-.semestre h2 {
-  text-align: center;
-  margin-bottom: 10px;
 }
