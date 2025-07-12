@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: italic;
   padding: 20px;
   background: #f9f9f9;
 }
@@ -19,7 +19,9 @@ h1 {
 }
 
 .semestre {
-  min-width: 220px;
+  min-width: 160px;
+  max-width: 160px;
+
   background-color: #f0f0f0;
   padding: 10px;
   border-radius: 8px;
@@ -33,7 +35,7 @@ h1 {
 }
 
 .ramo {
-  background-color: #ffffff;
+  background-color: #f3c7dd;
   border: 1px solid #ccc;
   margin: 6px 0;
   padding: 8px;
@@ -43,7 +45,7 @@ h1 {
 }
 
 .ramo.aprobado {
-  background-color: #c6f6d5;
+  background-color: #ec7bd4;
   border-color: #38a169;
 }
 
