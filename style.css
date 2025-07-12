@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+.semestre {
+  margin: 20px 0;
+}
+
+.ramo {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ramo.aprobado {
+  background-color: #f0c6f6;
+  border-color: #be6eec;
+}
+
+.ramo.bloqueado {
+  background-color: #eea6bb;
+  color: #99004f;
+  cursor: not-allowed;
+}
