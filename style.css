@@ -1,56 +1,60 @@
 body {
-  font-family: italic;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
   padding: 20px;
-  background: #f9f9f9;
+  background-color: #fafafa;
+  color: #333;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 
 #malla-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 10px;
-  border: 2px dashed #ccc;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
+  max-width: 100%;
 }
 
 .semestre {
-  min-width: 160px;
-  max-width: 160px;
-
-  background-color: #f0f0f0;
+  background-color: #f3f3f3;
+  border-radius: 12px;
   padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
 }
 
 .semestre h2 {
   text-align: center;
+  font-size: 16px;
   margin-bottom: 10px;
+  color: #444;
 }
 
 .ramo {
-  background-color: #f3c7dd;
-  border: 1px solid #ccc;
-  margin: 6px 0;
-  padding: 8px;
-  border-radius: 5px;
+  background-color: #dceefb; /* pastel celeste */
+  border: none;
+  border-radius: 8px;
+  padding: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
   cursor: pointer;
   transition: 0.2s;
+  text-align: center;
+  color: #1a202c;
+  font-weight: 500;
 }
 
 .ramo.aprobado {
-  background-color: #ec7bd4;
-  border-color: #38a169;
+  background-color: #63b3ed; /* azul más intenso */
+  color: white;
 }
 
 .ramo.bloqueado {
-  background-color: #eee;
-  color: #aaa;
+  background-color: #e2e8f0; /* gris suave */
+  color: #a0aec0;
   cursor: not-allowed;
 }
