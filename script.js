@@ -1,5 +1,7 @@
 let creditosTotales = 0;
 let creditosAprobados = 0;
+let aprobados = new Set();
+let ramosPorCodigo = {}; // Acceso rápido
 
 fetch('data.json')
   .then(response => response.json())
@@ -10,21 +12,22 @@ fetch('data.json')
     const contenedor = document.getElementById('contenedor-malla');
     contenedor.innerHTML = '';
 
-    // Agrupar ramos por semestre
     const semestresMap = new Map();
 
+    // Agrupar por semestre y guardar por código
     data.forEach(ramo => {
       if (!semestresMap.has(ramo.semestre)) {
         semestresMap.set(ramo.semestre, []);
       }
       semestresMap.get(ramo.semestre).push(ramo);
       creditosTotales += ramo.creditos;
+      ramosPorCodigo[ramo.codigo] = ramo;
     });
 
-    // Ordenar semestres ascendente
-    const semestresOrdenados = Array.from(semestresMap.keys()).sort((a,b) => a - b);
+    // Ordenar semestres
+    const semestresOrdenados = Array.from(semestresMap.keys()).sort((a, b) => a - b);
 
-    // Crear columnas por semestre
+    // Dibujar cada semestre
     semestresOrdenados.forEach(sem => {
       const columna = document.createElement('div');
       columna.className = 'semestre';
@@ -35,19 +38,30 @@ fetch('data.json')
 
       semestresMap.get(sem).forEach(ramo => {
         const div = document.createElement('div');
-        div.className = 'ramo';
+        div.className = 'ramo bloqueado'; // se bloquea por defecto
         div.textContent = `${ramo.nombre} (${ramo.creditos} cr)`;
+        div.dataset.codigo = ramo.codigo;
         div.dataset.creditos = ramo.creditos;
-        div.id = ramo.codigo.replace(/\s+/g, '_');
+        div.dataset.prerrequisitos = JSON.stringify(ramo.prerrequisitos);
+        div.id = ramo.codigo;
 
         div.addEventListener('click', () => {
+          if (div.classList.contains('bloqueado')) return;
+
           div.classList.toggle('aprobado');
-          if (div.classList.contains('aprobado')) {
-            creditosAprobados += ramo.creditos;
+          const aprobado = div.classList.contains('aprobado');
+          const creditos = parseInt(div.dataset.creditos);
+
+          if (aprobado) {
+            aprobados.add(ramo.codigo);
+            creditosAprobados += creditos;
           } else {
-            creditosAprobados -= ramo.creditos;
+            aprobados.delete(ramo.codigo);
+            creditosAprobados -= creditos;
           }
+
           actualizarCreditos();
+          actualizarBloqueos();
         });
 
         columna.appendChild(div);
@@ -57,10 +71,26 @@ fetch('data.json')
     });
 
     actualizarCreditos();
+    actualizarBloqueos(); // Aplicar lógica de desbloqueo inicial
   })
   .catch(error => console.error('Error al cargar JSON:', error));
 
 function actualizarCreditos() {
   document.getElementById("contador-creditos").textContent =
     `Créditos aprobados: ${creditosAprobados} / ${creditosTotales}`;
+}
+
+function actualizarBloqueos() {
+  document.querySelectorAll('.ramo').forEach(div => {
+    if (div.classList.contains('aprobado')) return; // ya aprobado
+
+    const prerreqs = JSON.parse(div.dataset.prerrequisitos);
+    const habilitado = prerreqs.every(cod => aprobados.has(cod));
+
+    if (habilitado) {
+      div.classList.remove('bloqueado');
+    } else {
+      div.classList.add('bloqueado');
+    }
+  });
 }
