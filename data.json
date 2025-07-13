@@ -74,7 +74,7 @@
     "nombre": "Anatomía II ",
     "semestre": 2,
     "creditos": 6,
-    "prerrequisitos": [KKIN105-1] 
+    "prerrequisitos": ["KKIN105-1"] 
   },
 {
   "codigo": "KKIN206-1",
@@ -144,7 +144,7 @@
     "nombre": "Neuromecánica del movimiento",
     "semestre": 3,
     "creditos": 5,
-    "prerrequisitos": [] 
+    "prerrequisitos": ["KKIN205-1"] 
 },
 {
   "codigo": "KKIN402-1",
@@ -165,7 +165,7 @@
     "nombre": "Diseño de acciones profesionales",
     "semestre": 4,
     "creditos": 4,
-    "prerrequisitos": [] 
+    "prerrequisitos": ["KKIN301-1"] 
 },
 {
   "codigo": "KKIN404-1",
