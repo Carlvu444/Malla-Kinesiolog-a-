@@ -14,14 +14,14 @@ body {
 
 .semestre {
   min-width: 220px;
-  background-color: #ffe6f0;
+  background-color: #f49bbe;
   border-radius: 16px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(255, 182, 193, 0.2);
 }
 
 .semestre h3 {
-  color: #c2185b;
+  color: #f62b7b;
   text-align: center;
 }
 
