@@ -1,49 +1,48 @@
-let ramos = [];
+let creditosTotales = 0;
+let creditosAprobados = 0;
 
- fetch("./data.json")
+fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    ramos = data;
-    renderMalla();
-  });
+    const contenedor = document.getElementById('contenedor-malla');
 
-function renderMalla() {
-  const container = document.getElementById("malla-container");
-  container.innerHTML = "";
+    data.forEach((semestre, i) => {
+      const columna = document.createElement('div');
+      columna.className = 'semestre';
 
-  const semestres = [...new Set(ramos.map(r => r.semestre))].sort((a, b) => a - b);
+      const titulo = document.createElement('h3');
+      titulo.textContent = `Semestre ${i + 1}`;
+      columna.appendChild(titulo);
 
-  semestres.forEach(sem => {
-    const semDiv = document.createElement("div");
-    semDiv.classList.add("semestre");
-    semDiv.innerHTML = `<h2>Semestre ${sem}</h2>`;
+      semestre.forEach(ramo => {
+        creditosTotales += ramo.creditos;
 
-    ramos.filter(r => r.semestre === sem).forEach(ramo => {
-      const div = document.createElement("div");
-      div.classList.add("ramo");
+        const div = document.createElement('div');
+        div.className = 'ramo';
+        div.textContent = `${ramo.nombre} (${ramo.creditos} cr)`;
+        div.dataset.creditos = ramo.creditos;
+        div.id = ramo.nombre.replace(/\s+/g, '_');
 
-      const cumplido = ramo.prerrequisitos.every(cod => localStorage.getItem(cod) === "true");
+        div.addEventListener('click', () => {
+          div.classList.toggle('aprobado');
+          if (div.classList.contains('aprobado')) {
+            creditosAprobados += ramo.creditos;
+          } else {
+            creditosAprobados -= ramo.creditos;
+          }
+          actualizarCreditos();
+        });
 
-      if (ramo.prerrequisitos.length > 0 && !cumplido) {
-        div.classList.add("bloqueado");
-      }
+        columna.appendChild(div);
+      });
 
-      if (localStorage.getItem(ramo.codigo) === "true") {
-        div.classList.add("aprobado");
-      }
-
-      div.innerText = `${ramo.nombre}`;
-      div.onclick = () => {
-        if (!div.classList.contains("bloqueado")) {
-          const aprobado = localStorage.getItem(ramo.codigo) === "true";
-          localStorage.setItem(ramo.codigo, !aprobado);
-          renderMalla();
-        }
-      };
-
-      semDiv.appendChild(div);
+      contenedor.appendChild(columna);
     });
 
-    container.appendChild(semDiv);
+    actualizarCreditos();
   });
+
+function actualizarCreditos() {
+  document.getElementById("contador-creditos").textContent = 
+    `Créditos aprobados: ${creditosAprobados} / ${creditosTotales}`;
 }
