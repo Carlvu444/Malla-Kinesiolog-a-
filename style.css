@@ -46,6 +46,12 @@ body {
   font-weight: bold;
   border: none;
 }
+.ramo.bloqueado {
+  opacity: 0.4;
+  pointer-events: none;
+  background-color: #f8bbd0;
+  border-style: dashed;
+}
 
 #contador-creditos {
   font-weight: bold;
