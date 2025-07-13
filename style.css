@@ -13,15 +13,15 @@ body {
 }
 
 .semestre {
-  min-width: 220px;
-  background-color: #e2a0b7;
+  min-width: 150px;
+  background-color: #f4c3d4;
   border-radius: 16px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(255, 182, 193, 0.2);
 }
 
 .semestre h3 {
-  color: #f62b7b;
+  color: #820637;
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .ramo.aprobado {
-  background-color: #f06292;
+  background-color: #e194fe;
   color: white;
   font-weight: bold;
   border: none;
